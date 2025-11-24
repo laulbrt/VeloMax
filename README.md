@@ -1,110 +1,102 @@
-🚲 VeloMax – Bike Shop Management System (C# WPF)
+# VeloMax – Bike Shop Management System (C# WPF)
 
-VeloMax is a desktop management application built with C# and WPF.
-It allows a bike shop to manage its entire workflow: customers, orders, bikes, parts, suppliers, and inventory, with all data stored using XML files.
+VeloMax is a desktop management application built with **C# and WPF**.  
+It allows a bike shop to manage its workflow end-to-end: customers, orders, bikes, parts, suppliers, and inventory.  
+All data is stored locally using **XML files**.
 
-This project was created for an academic assignment and follows clean object-oriented programming principles.
+This project was created as part of an academic assignment and follows clean object-oriented programming principles.
 
-⭐ Features
-🧑‍🤝‍🧑 Customer Management
+---
 
-Add, update and delete customers
+## Project Overview
 
-Regular customers and loyalty-members
+VeloMax centralizes all the operations of a bike shop into a single application.  
+It supports customer tracking, product catalog management, supplier handling, order creation, and inventory management.
 
-Track customer order history
+The system uses XML-based storage to keep the application lightweight and easy to deploy.  
+The main goal is to offer a clean, modular, and extensible management tool.
 
-Automatic XML data persistence
+---
 
-🚲 Bike & Part Management
+## Main Features
 
-Manage bike models
+### Customer Management
+- Create, update, and delete customers  
+- Support for regular and loyalty-member customers  
+- Track customer order history  
+- Persist customer data in XML  
 
-Manage parts and their suppliers
+### Bike & Part Management
+- Manage bike models  
+- Manage parts and associate them with suppliers  
+- Track and update stock levels  
+- Search and display product information  
 
-Update stock levels
+### Order Management
+- Create and modify orders  
+- Automatic price calculation  
+- Associate orders with customers  
+- Manage orders for both bikes and parts  
+- Save orders in XML format  
 
-Association between parts and bikes
+### Supplier Management
+- Store supplier details and contacts  
+- Associate suppliers with parts  
+- Track delivery delays  
 
-Display and search features
+### WPF Interface
+- Multiple screens for each module  
+- Simple and intuitive navigation  
+- XAML-based user interface  
 
-🛒 Order Management
+---
 
-Create, edit, and track orders
+## How It Works
 
-Automatic total price calculation
+1. The application loads existing data from XML files at startup.  
+2. The user navigates through the different screens to manage entities.  
+3. All changes (create, update, delete) are instantly saved.  
+4. On closing the app, all data is written back to XML.
 
-Link customers to orders
+---
 
-Manage orders for bikes and parts
+## Technologies Used
 
-Store all transactions in XML
+| Purpose | Technology |
+|---------|------------|
+| Front-End | WPF (XAML) |
+| Programming Language | C# (.NET Framework) |
+| Data Storage | XML Files |
+| Architecture | Object-Oriented Programming |
+| IDE | Visual Studio |
 
-🏭 Supplier Management
+---
 
-Manage supplier profiles and contacts
+## Installation and Execution
 
-Associate suppliers with parts
+### Clone the repository
 
-Track delivery delays
-
-💾 Data Persistence
-
-All data (customers, bikes, parts, suppliers, orders) is stored in XML files
-
-Automatic load/save on application start/close
-
-🖥️ WPF User Interface
-
-Multiple screens/windows for each module
-
-XAML-based UI
-
-Clear and intuitive navigation
-
-Functional and simple layout
-
-🛠️ Tech Stack
-
-C# (.NET Framework)
-
-WPF / XAML
-
-Object-Oriented Programming
-
-XML Data Storage
-
-Visual Studio
-
-📁 Project Structure Overview
-VeloMax/
- ├── Models/
- ├── Customers/
- ├── Orders/
- ├── Bikes/
- ├── Parts/
- ├── Suppliers/
- ├── XML_Database/
- ├── *.cs        (business logic)
- ├── *.xaml      (UI)
- ├── *.xml       (data)
- └── VeloMax.csproj
-
-▶️ How to Run
-
-Clone the repository
-
+```bash
 git clone https://github.com/laulbrt/VeloMax.git
+cd VeloMax
 
-Open the project in Visual Studio
+Open the project
 
-Restore NuGet packages if required
+Open the solution using Visual Studio.
 
-Build and run the project
-(Ctrl + F5)
+Restore dependencies
 
-The application will automatically load data from XML files when it starts.
+Restore NuGet packages if prompted.
 
-📜 License
+Run the application
 
-This project was created for educational purposes.
+Build and run with:
+
+Ctrl + F5
+
+
+The application will automatically load data from the XML files.
+
+License
+
+This project was created for academic purposes.
